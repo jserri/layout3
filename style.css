@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 20%;
+    background-color: lightblue;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 80%;
+    background-color: lightgreen;
+}
+
+.nav {
+    display: flex;
+    min-height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightcoral;
+}
+
+.nav > .input {
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 50%;
+    padding: 15px;
+}
+
+.box-hidden {
+    display: none;
+    width: 80px;
+    height: 34px;
+    margin-left: 10px;
+    background: purple;
+}
+
+.nav > .username {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1 1 50%;
+    padding: 15px;
+    margin-right: 10px;
+}
+
+input{
+    padding: 7px;
+}
+
+.article {
+    display: flex;
+    position: relative;
+    height: 100%;
+    background: lightseagreen;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: peru;
+    position: absolute;
+    margin: 20px;
+    bottom: 0;
+    right: 0;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 3px;
+    background: lightseagreen;
+}
+
+.header-box {
+    width: 160px;
+    height: 50px;
+    background-color: lightpink;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .aside {
+        display: none;
+    }
+
+    .input > input {
+        display: none;
+    }
+
+    .box-hidden {
+        display: flex;
+        justify-content: flex-start;
+        order: -1;
+        width: 150px;
+    }
+    
+}
